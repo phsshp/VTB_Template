@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="task" label="Task" language="en" table="x_maog_vt_visual_task_board_card">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>task</element>
+            <help/>
+            <hint/>
+            <label>Task</label>
+            <language>en</language>
+            <name>x_maog_vt_visual_task_board_card</name>
+            <plural>Tasks</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>peter.smith</sys_created_by>
+            <sys_created_on>2018-05-15 01:46:29</sys_created_on>
+            <sys_id>09a62a46db8a9b00898be3a84b9619bc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Task</sys_name>
+            <sys_package display_value="VTB Templates" source="x_maog_vt">96b52d0edbe51700d4b15eea4b9619e0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="VTB Templates">96b52d0edbe51700d4b15eea4b9619e0</sys_scope>
+            <sys_update_name>sys_documentation_x_maog_vt_visual_task_board_card_task_en</sys_update_name>
+            <sys_updated_by>peter.smith</sys_updated_by>
+            <sys_updated_on>2018-05-15 01:46:29</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

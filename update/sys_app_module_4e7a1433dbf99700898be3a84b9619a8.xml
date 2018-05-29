@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="VTB Templates">361c624adb8a9b00898be3a84b961951</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Visual Task Boards</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_maog_vt_visual_task_board</name>
+        <order>2100</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles/>
+        <survey/>
+        <survey_overwrite>true</survey_overwrite>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>joshua.josekutty</sys_created_by>
+        <sys_created_on>2018-05-07 15:47:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4e7a1433dbf99700898be3a84b9619a8</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>VTB Template Boards</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="VTB Templates" source="x_maog_vt">96b52d0edbe51700d4b15eea4b9619e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="VTB Templates">96b52d0edbe51700d4b15eea4b9619e0</sys_scope>
+        <sys_update_name>sys_app_module_4e7a1433dbf99700898be3a84b9619a8</sys_update_name>
+        <sys_updated_by>peter.smith</sys_updated_by>
+        <sys_updated_on>2018-05-22 21:38:40</sys_updated_on>
+        <timeline_page/>
+        <title>VTB Template Boards</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+</record_update>

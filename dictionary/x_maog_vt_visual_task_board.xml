@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Visual Task Board" max_length="40" name="x_maog_vt_visual_task_board" type="collection">
+        <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Assignment group" max_length="32" name="assignment_group" reference="sys_user_group" type="reference"/>
+        <element default="#8C8D92" label="Background color" max_length="40" name="background_color" type="color"/>
+        <element default="javascript:gs.getMessage('vtb_label_2')" label="Blue Label" max_length="40" name="blue_label" type="string"/>
+        <element default="true" label="Blue Label Active" max_length="40" name="blue_label_active" type="boolean"/>
+        <element default="100" label="Card limit" max_length="40" name="card_limit" type="integer"/>
+        <element label="Comments" max_length="4000" name="comments" type="journal_input"/>
+        <element label="Filter" max_length="3500" name="filter" type="conditions"/>
+        <element default="javascript:gs.getMessage('vtb_label_3')" label="Green Label" max_length="40" name="green_label" type="string"/>
+        <element default="true" label="Green Label Active" max_length="40" name="green_label_active" type="boolean"/>
+        <element label="Lane field" max_length="80" name="lane_field" type="field_name"/>
+        <element label="Last Sync" max_length="40" name="last_sync" type="glide_date_time"/>
+        <element label="List view name" max_length="40" name="list_view_name" type="string"/>
+        <element label="Name" max_length="80" name="name" type="string"/>
+        <element default="javascript:gs.getMessage('vtb_label_5')" label="Orange Label" max_length="40" name="orange_label" type="string"/>
+        <element default="true" label="Orange Label Active" max_length="40" name="orange_label_active" type="boolean"/>
+        <element default="javascript:gs.getMessage('vtb_label_4')" label="Purple Label" max_length="40" name="purple_label" type="string"/>
+        <element default="true" label="Purple Label Active" max_length="40" name="purple_label_active" type="boolean"/>
+        <element default="javascript:gs.getMessage('vtb_label_1')" label="Red Label" max_length="40" name="red_label" type="string"/>
+        <element default="true" label="Red Label Active" max_length="40" name="red_label_active" type="boolean"/>
+        <index name="index">
+            <element name="assignment_group"/>
+        </index>
+    </element>
+</database>

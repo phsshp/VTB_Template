@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="label_3" label="Label 3" language="en" table="x_maog_vt_visual_task_board_card">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>label_3</element>
+            <help/>
+            <hint/>
+            <label>Label 3</label>
+            <language>en</language>
+            <name>x_maog_vt_visual_task_board_card</name>
+            <plural>Label 3s</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>peter.smith</sys_created_by>
+            <sys_created_on>2018-05-15 01:43:21</sys_created_on>
+            <sys_id>03e52646db8a9b00898be3a84b96193d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Label 3</sys_name>
+            <sys_package display_value="VTB Templates" source="x_maog_vt">96b52d0edbe51700d4b15eea4b9619e0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="VTB Templates">96b52d0edbe51700d4b15eea4b9619e0</sys_scope>
+            <sys_update_name>sys_documentation_x_maog_vt_visual_task_board_card_label_3_en</sys_update_name>
+            <sys_updated_by>peter.smith</sys_updated_by>
+            <sys_updated_on>2018-05-15 01:43:21</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

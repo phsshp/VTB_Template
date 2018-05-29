@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_properties_category_m2m">
+    <sys_properties_category_m2m action="INSERT_OR_UPDATE">
+        <category display_value="VTB Template Properties">75f1fa96dbce5700d4b15eea4b96194e</category>
+        <order>3800</order>
+        <property display_value="x_maog_vt.sequenced_logger.VTB_Utils.level" name="x_maog_vt.sequenced_logger.VTB_Utils.level">92dfbee0db5a5b00d4b15eea4b9619e5</property>
+        <sys_class_name>sys_properties_category_m2m</sys_class_name>
+        <sys_created_by>peter.smith</sys_created_by>
+        <sys_created_on>2018-05-22 22:02:39</sys_created_on>
+        <sys_id>58208324db5a5b00d4b15eea4b9619a3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_maog_vt.sequenced_logger.VTB_Utils.VTB Template Properties</sys_name>
+        <sys_package display_value="VTB Templates" source="x_maog_vt">96b52d0edbe51700d4b15eea4b9619e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="VTB Templates">96b52d0edbe51700d4b15eea4b9619e0</sys_scope>
+        <sys_update_name>sys_properties_category_m2m_58208324db5a5b00d4b15eea4b9619a3</sys_update_name>
+        <sys_updated_by>peter.smith</sys_updated_by>
+        <sys_updated_on>2018-05-22 22:05:13</sys_updated_on>
+    </sys_properties_category_m2m>
+</record_update>

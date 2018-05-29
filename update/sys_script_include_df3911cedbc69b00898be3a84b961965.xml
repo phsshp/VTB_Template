@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_maog_vt.VTB_Template</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>VTB_Template</name>
+        <script><![CDATA[var VTB_Template = Class.create();
+VTB_Template.prototype = (function VTB_Template_Proto(p) {
+	p = p || {};
+
+	var TYPE = 'VTB_Template';
+	var TABLE = 'x_maog_vt_visual_task_board'; 
+
+	p.type = TYPE;
+
+	log = global.SequencedLogger.getLogger('VTB_Template');
+
+	function initialize(vtbtGr) {
+		if (!vtbtGr) {
+			vtbtGr = new GlideRecordSecure(TABLE);
+			vtbtGr.initialize();
+		}
+
+		function getUniqueValue() {
+			return vtbtGr.getUniqueValue();
+		}
+		this.getUniqueValue = getUniqueValue;
+
+	} // End initialize
+	p.initialize = initialize;
+
+	// Make a template record from the board record.
+	function createTemplateRecord(vtbGr) {
+		var vtbtGr = VTB_Utils.createGlideRecord(vtbGr, TABLE);
+		if (!vtbGr) return null;
+		return new VTB_Template(vtbtGr);
+	}
+
+	// Build the complete template from the board, lanes, and cards.
+	function createTemplate(vtbGr) {
+		var vtbt;
+		
+		vtbt = createTemplateRecord(vtbGr);
+
+		if (vtbt) {
+			vtbGr.x_maog_vt_template = vtbt.getUniqueValue();
+			vtbGr.update();
+
+			// Copy related records.
+			VTB_Template_Card.addToTemplate(vtbGr, vtbt);
+			VTB_Template_Lane.addToTemplate(vtbGr, vtbt);
+		}
+
+		return vtbt;
+	}
+	VTB_Template.createTemplate = createTemplate;
+
+})(); // End VTB_Template_Proto]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>peter.smith</sys_created_by>
+        <sys_created_on>2018-05-14 20:12:44</sys_created_on>
+        <sys_id>df3911cedbc69b00898be3a84b961965</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>VTB_Template</sys_name>
+        <sys_package display_value="VTB Templates" source="x_maog_vt">96b52d0edbe51700d4b15eea4b9619e0</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="VTB Templates">96b52d0edbe51700d4b15eea4b9619e0</sys_scope>
+        <sys_update_name>sys_script_include_df3911cedbc69b00898be3a84b961965</sys_update_name>
+        <sys_updated_by>peter.smith</sys_updated_by>
+        <sys_updated_on>2018-05-15 20:34:21</sys_updated_on>
+    </sys_script_include>
+</record_update>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Visual Task Board Card" max_length="40" name="x_maog_vt_visual_task_board_card" type="collection">
+        <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Board" max_length="32" name="board" reference="x_maog_vt_visual_task_board" type="reference"/>
+        <element label="Label 1" max_length="40" name="label_1" type="boolean"/>
+        <element label="Label 2" max_length="40" name="label_2" type="boolean"/>
+        <element label="Label 3" max_length="40" name="label_3" type="boolean"/>
+        <element label="Label 4" max_length="40" name="label_4" type="boolean"/>
+        <element label="Label 5" max_length="40" name="label_5" type="boolean"/>
+        <element label="Lane" max_length="32" name="lane" reference="x_maog_vt_visual_task_board_lane" type="reference"/>
+        <element default="1" label="Order" max_length="40" name="order" type="integer"/>
+        <element label="Removed" max_length="40" name="removed" type="boolean"/>
+        <element label="Task" max_length="32" name="task" reference="task" type="reference"/>
+        <index name="index">
+            <element name="task"/>
+        </index>
+        <index name="index2">
+            <element name="board"/>
+        </index>
+        <index name="index3">
+            <element name="lane"/>
+        </index>
+    </element>
+</database>

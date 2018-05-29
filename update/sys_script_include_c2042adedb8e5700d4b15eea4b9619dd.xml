@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_maog_vt.VTB_Utils</api_name>
+        <client_callable>false</client_callable>
+        <description>Utility functions</description>
+        <name>VTB_Utils</name>
+        <script><![CDATA[var VTB_Utils = Class.create();
+VTB_Utils.prototype = (function VTB_Utils_proto(p) {
+	var TYPE = 'VTB_Utils';
+
+	var IGNORE = {
+		'sys_meta': true,
+	};
+	
+	var log = global.SequencedLogger.getLogger(TYPE);
+
+	function cloneGlideRecord(oldGr, className) {
+		var newGr, key, value, msg;
+		className = className || oldGr.getTableName();
+
+		newGr = new GlideRecordSecure(className);
+		newGr.initialize();
+
+		for (key in oldGr) {
+			if (!oldGr.hasOwnProperty(key)) continue;
+			value = oldGr[key];
+			log.debug('typeof gr[{0}] = {1}', key, typeof value);
+			if (value === undefined) continue;
+			if (IGNORE[key]) continue;
+			newGr.setValue(key, value.getValue());
+		}
+
+		newGr.sys_id = -1;
+		return newGr;
+	}
+	VTB_Utils.cloneGlideRecord = cloneGlideRecord;
+
+	function createGlideRecord(oldGr, className) {
+		var newGr, msg;
+		
+		newGr = cloneGlideRecord(oldGr, className);
+		newGr.sys_id = -1;
+		newGr.sys_class_name = TABLE;		
+		
+		if (!newGr.insert()) {
+			msg = 'Could not create a ' + className + 'record';
+			gs.addErrorMessage(msg);
+			log.error(msg);
+			return null;
+		}
+		
+		return newGr;
+	}
+	VTB_Utils.createGlideRecord = createGlideRecord;
+
+})();]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>peter.smith</sys_created_by>
+        <sys_created_on>2018-05-15 20:31:21</sys_created_on>
+        <sys_id>c2042adedb8e5700d4b15eea4b9619dd</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>VTB_Utils</sys_name>
+        <sys_package display_value="VTB Templates" source="x_maog_vt">96b52d0edbe51700d4b15eea4b9619e0</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="VTB Templates">96b52d0edbe51700d4b15eea4b9619e0</sys_scope>
+        <sys_update_name>sys_script_include_c2042adedb8e5700d4b15eea4b9619dd</sys_update_name>
+        <sys_updated_by>peter.smith</sys_updated_by>
+        <sys_updated_on>2018-05-15 20:49:49</sys_updated_on>
+    </sys_script_include>
+</record_update>
